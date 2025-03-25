@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.score-board {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-board div {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.score-board .score {
+    flex-direction: row;
+}
+
+.player-turn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b4781c;
+}
+
+.container {
+    border: 2px solid black;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container button {
+    font-size: 50px;
+    flex: 1 0 30%;
+    height: 150px;
+    border-radius: 0;
+}
+
+.container button:active {
+    border: none;
+}
+
+::backdrop {
+    background-color: black;
+    opacity: 0.3;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+dialog form input {
+    width: 250px;
+    height: 25px;
+}
+
+dialog form button {
+    font-size: 18px;
+    font-weight: bold;
+    height: 35px;
+}
+
+.winner-wrapper dialog {
+    width: 300px;
+}
+
+.winner-wrapper div {
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+.winner-wrapper div:last-child {
+    font-size: 25px;
+}
+
+.winner-wrapper dialog > div:last-child {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 0;
+}
+
+.winner-wrapper button {
+    flex: 1;
+    height: 30px;
+    font-weight: bold;
+}
